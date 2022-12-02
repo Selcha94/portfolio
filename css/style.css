@@ -375,7 +375,95 @@ header{
     0%{width: 0%;}
     100%{width: 90%;}
 }
-
+/* Curriculum */
+.estudios .row{
+    display: flex;
+    justify-content: space-between;
+}
+.estudios .row .col{
+    width: 49%;
+    padding: 0 20px;
+}
+.estudios .row .col h3{
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.estudios .row .left{
+    border-right: 2px solid var(--container-color);
+}
+.estudios .row .right{
+    border-left: 2px solid var(--container-color);
+}
+.estudios .row .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: var(--heading-color);
+    position: relative;
+}
+.estudios .row .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.estudios .row .item .institucion{
+    color: var(--main-color);
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+}
+.estudios .row .item .fecha{
+    display: block;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+.estudios .row .item p{
+    line-height: 24px;
+}
+.estudios .row .left{
+    border-right: 2px solid var(--heading-color);
+    margin-right: 20px;
+}
+.estudios .row .right{
+    border-left: 2px solid var(--heading-color);
+    margin-left: 20px;
+}
+.estudios .row .item .connectori{
+    height: 2px;
+    background-color: var(--main-color);
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+.estudios .row .item .connectori .circlei{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+.estudios .row .item .connectord{
+    height: 2px;
+    background-color: var(--main-color);
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+.estudios .row .item .connectord .circled{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
 /* Portfolio */
 .portfolio-content{
     display: grid;
