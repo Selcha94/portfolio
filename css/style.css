@@ -244,69 +244,138 @@ header{
     margin-bottom: 1.5rem;
 }
 /* Skills */
-.skills{
-    padding: 5rem 0 2.5rem 0;
-}
-.skills > .text{
-    width: 70%;
-    margin: 1.5rem auto;
-    text-align: center;
-}
 .skills .row{
-    margin: 1rem 0;
-}
-.skills .item{
-    padding: 0.5rem 0;
-    margin: 0.3rem 0;
-}
-.skills .item-text{
     display: flex;
-    justify-content: flex-start;
-    font-weight: 600;
-    font-size: 1.1rem;
-    position: relative;
 }
-.skills .item-text span:last-child{
-    position: absolute;
+.skills .row .col{
+    width: 50%;
+    padding: 0 20px;
 }
-.skills .item-text .w-90{
-    margin-left: 85%;
+.skills .row .col h3{
+    font-size: 28px;
+    margin-bottom: 25px;
 }
-.skills .item-text .w-75{
-    margin-left: 70%;
+.skills .skill >span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
 }
-.skills .item-text .w-80{
-    margin-left: 75%;
-}
-.skills .item-text .w-45{
-    margin-left: 40%;
-}
-.progress{
-    margin: 0.8rem 0;
-    border-radius: 10px;
-    height: 16px;
-    width: 100%;
-    background-color: var(--container-color);
-    overflow: hidden;
-}
-.progress-bar{
-    background: var(--main-color);
-    height: 100%;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
-}
-.progress-bar.w-90{
-    width: 90%;
-}
-.progress-bar.w-75{
-    width: 75%;
-}
-.progress-bar.w-80{
+.skills .skill .skills-bar{
+    height: 8px;
     width: 80%;
+    background-color: var(--heading-color);
+    position: relative;
+    margin-bottom: 30px;
 }
-.progress-bar.w-45{
-    width: 45%;
+.skills .skill .progress{
+    background-color: var(--main-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
 }
+
+.skills .skill .skills-bar span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: var(--main-color);
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+.skills .skill .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript{
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+.skills .skill .htmlcss{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+@keyframes htmlcss{
+    0%{width: 0%;}
+    100%{width: 89%;}
+}
+.skills .skill .python{
+    width: 0%;
+    animation: 2s python forwards;
+}
+@keyframes python{
+    0%{width: 0%;}
+    100%{width: 85%;}
+}
+.skills .skill .mysql{
+    width: 0%;
+    animation: 2s mysql forwards;
+}
+@keyframes mysql{
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+.skills .skill .photoshop{
+    width: 0%;
+    animation: 2s photoshop forwards;
+}
+@keyframes photoshop{
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+.skills .skill .figma{
+    width: 0%;
+    animation: 2s figma forwards;
+}
+@keyframes figma{
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+.skills .skill .comunicacion{
+    width: 0%;
+    animation: 2s comunicacion forwards;
+}
+@keyframes comunicacion{
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+.skills .skill .trabajoequipo{
+    width: 0%;
+    animation: 2s trabajoequipo forwards;
+}
+@keyframes trabajoequipo{
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+.skills .skill .creatividad{
+    width: 0%;
+    animation: 2s creatividad forwards;
+}
+@keyframes creatividad{
+    0%{width: 0%;}
+    100%{width: 65%;}
+}
+.skills .skill .autodidacta{
+    width: 0%;
+    animation: 2s autodidacta forwards;
+}
+@keyframes autodidacta{
+    0%{width: 0%;}
+    100%{width: 95%;}
+}
+.skills .skill .productividad{
+    width: 0%;
+    animation: 2s productividad forwards;
+}
+@keyframes productividad{
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
 /* Portfolio */
 .portfolio-content{
     display: grid;
